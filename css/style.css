@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.principal {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+nav {
+    position: relative; /* Establece la posición relativa para el nav */
+}
+
+nav ul {
+    padding: 10px; /* Añade un espacio de relleno alrededor de la lista */
+}
+
+nav ul li {
+    border: 1px solid white;
+    border-top: 4px solid red;
+}
+
+nav ul li:hover {
+    border-top: 4px solid #ea620d;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #102381;
+}
+
+li {
+    float: left;
+}
+
+header nav div {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header > div img {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    filter: brightness(0.3);
+}
+
+.text {
+    margin: 20px;
+}
+
+/* Articulo 1*/
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Establece columnas de tamaño variable */
+    gap: 10px;
+}
+
+.article {
+    border-top: 4px solid #ff0000;
+    background-color: #fab9a7;
+    margin-bottom: 5px;
+}
+
+.article-content {
+    padding: 10px; /* Espaciado interno para el contenido del artículo */
+}
+
+.image-container {
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.article-1 {
+    border-top: 4px solid #ff0000;
+    background-color: #fab9a7;
+    margin-bottom: 5px;
+    grid-column: span 3; /* Establece que el artículo ocupe tres columnas en el grid */
+}
+
+.article-2 {
+    border-top: 4px solid #ff0000;
+    background-color: #fab9a7;
+    margin-bottom: 5px;
+    grid-column: span 2; /* Establece que el artículo ocupe tres columnas en el grid */
+}
+
+.article-2 div img {
+    float: left;
+    margin-right: 15px;
+}
+
+.article-1 div img {
+    float: right;
+    margin-left: 15px;
+}
+
+.text-bold {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-weight: bold;
+}
+
+.article-4 {
+    border-top: 4px solid #ff0000;
+    background-color: #fab9a7;
+    margin-bottom: 5px;
+    grid-row: span 4; /* Establece que el artículo ocupe dos filas en el grid */
+    grid-column: -2; /* Coloca el artículo en la última columna del grid */
+}
+
